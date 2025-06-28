@@ -16,14 +16,18 @@
         background: #000;
         overflow: hidden; /* لمنع التمرير غير الضروري */
       }
+      body {
+        display: flex;
+        justify-content: center; /* توسيط أفقي */
+        align-items: center; /* توسيط عمودي */
+      }
       img {
-        width: 100vw; /* العرض الكامل للشاشة */
-        height: auto; /* الارتفاع يتكيف مع النسب */
-        min-height: 100vh; /* الارتفاع الأدنى يساوي الشاشة */
+        width: auto;
+        height: auto;
+        max-width: 100vw; /* يحد من العرض ليتناسب الشاشة */
+        max-height: 100vh; /* يحد من الارتفاع ليتناسب الشاشة */
         display: block;
-        margin: 0 auto; /* لتوسيط الصورة أفقيًا */
-        object-fit: contain; /* الحفاظ على النسب */
-        vertical-align: bottom; /* لضبط المحاذاة السفلية */
+        object-fit: contain; /* الحفاظ على النسب الأصلية */
       }
     </style>
   </head>
