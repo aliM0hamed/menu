@@ -18,11 +18,11 @@
       }
       img {
         width: 100vw; /* العرض الكامل للشاشة */
-        height: auto; /* الارتفاع يتكيف مع النسب الأصلية */
-        max-height: 100vh; /* يحد من الارتفاع ليتناسب الشاشة */
+        height: auto; /* الارتفاع يتكيف مع النسب */
+        min-height: 100vh; /* الارتفاع الأدنى يساوي الشاشة */
         display: block;
         margin: 0 auto; /* لتوسيط الصورة أفقيًا */
-        object-fit: contain; /* الحفاظ على النسب الأصلية دون تمطيط */
+        object-fit: contain; /* الحفاظ على النسب */
         vertical-align: bottom; /* لضبط المحاذاة السفلية */
       }
     </style>
